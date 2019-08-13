@@ -43,7 +43,12 @@ public class Bolsa {
      */
     public void addObjeto (Objetos obj) throws BolsaLlenaException {
         // Implementar
-        
+        if (pesoActual < PESO_MAXIMO) {
+            
+            
+            
+           
+        }
         
         
         
@@ -84,7 +89,7 @@ public class Bolsa {
     public Integer getPesoLibre () {
         // Implementar
         
-        PESO_MAXIMO - pesoActual = PesoLibre ;
+        PesoLibre = PESO_MAXIMO - pesoActual;
         
         
         
