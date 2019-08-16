@@ -43,9 +43,15 @@ public class Bolsa {
      */
     public void addObjeto (Objetos obj) throws BolsaLlenaException {
         // Implementar
-        if (pesoActual < PESO_MAXIMO) {
-            
-            
+        
+                if (pesoActual + obj.getPeso() < PESO_MAXIMO){
+                    porNombre.put(obj.getNombre(), obj);
+                
+            }
+              else {
+               throw new BolsaLlenaException("No hay espacio suficiente");
+                
+            }
             
            
         }
@@ -53,7 +59,7 @@ public class Bolsa {
         
         
         
-    }
+    
 
     /** Quita un objeto de la bolsa, si .
      *  @param nombre El objeto a quitar de la bolsa.
